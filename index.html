@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALT CONVERTER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="alt-container">
+        <h1>Crypto Converter</h1>
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="crypto">
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="BNB">Binance Coin (BNB)</option>
+                <option value="USDT">Tether (USDT)</option>
+                <option value="XRP">XRP (XRP)</option>
+                <option value="ADA">Cardano (ADA)</option>
+                <option value="DOGE">Dogecoin (DOGE)</option>
+                <option value="TRX">TRON (TRX)</option>
+                <option value="TON">Toncoin (TON)</option>
+                <option value="SOL">Solana (SOL)</option>
+                <option value="DOT">Polkadot (DOT)</option>
+                <option value="MATIC">Polygon (MATIC)</option>
+                <option value="LTC">Litecoin (LTC)</option>
+                <option value="SHIB">Shiba Inu (SHIB)</option>
+                <option value="AVAX">Avalanche (AVAX)</option>
+                <option value="LINK">Chainlink (LINK)</option>
+                <option value="UNI">Uniswap (UNI)</option>
+                <option value="BCH">Bitcoin Cash (BCH)</option>
+                <option value="XLM">Stellar (XLM)</option>
+                <option value="APE">ApeCoin (APE)</option>
+                <option value="HBAR">Hedera (HBAR)</option>
+                <option value="ICP">Internet Computer (ICP)</option>
+                <option value="VET">VeChain (VET)</option>
+                <option value="FIL">Filecoin (FIL)</option>
+                <option value="NEAR">NEAR Protocol (NEAR)</option>
+                <option value="LDO">Lido DAO (LDO)</option>
+                <option value="OKB">OKB (OKB)</option>
+                <option value="QNT">Quant (QNT)</option>
+                <option value="GRT">The Graph (GRT)</option>
+                <option value="AAVE">Aave (AAVE)</option>
+                <option value="MKR">Maker (MKR)</option>
+                <option value="FLOW">Flow (FLOW)</option>
+                <option value="EOS">EOS (EOS)</option>
+                <option value="FTM">Fantom (FTM)</option>
+                <option value="SAND">The Sandbox (SAND)</option>
+                <option value="XTZ">Tezos (XTZ)</option>
+                <option value="RUNE">THORChain (RUNE)</option>
+                <option value="GALA">Gala (GALA)</option>
+                <option value="PEPE">Pepe (PEPE)</option>
+                <option value="SNX">Synthetix (SNX)</option>
+                <option value="ENS">Ethereum Name Service (ENS)</option>
+                <option value="IMX">Immutable X (IMX)</option>
+                <option value="KLAY">Klaytn (KLAY)</option>
+                <option value="CHZ">Chiliz (CHZ)</option>
+                <option value="ARB">Arbitrum (ARB)</option>
+                <option value="OP">Optimism (OP)</option>
+                <option value="CRO">Cronos (CRO)</option>
+                <option value="STX">Stacks (STX)</option>
+                <option value="CELO">Celo (CELO)</option>
+                <option value="COMP">Compound (COMP)</option>
+
+                <!-- This is to add as much cryto currency as needed -->
+            </select>
+        </div>
+
+        <div class="input-group">
+            <input type="number" id="ConvertedAmount" placeholder="Converted Amount" disabled>
+            <select id="fiat">
+                <option value="USD">United States Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="NGN">Nigerian Naira (NGN)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="HKD">Hong Kong Dollar (HKD)</option>
+                <option value="NZD">New Zealand Dollar (NZD)</option>
+                <option value="SEK">Swedish Krona (SEK)</option>
+                <option value="KRW">South Korean Won (KRW)</option>
+                <option value="SGD">Singapore Dollar (SGD)</option>
+                <option value="NOK">Norwegian Krone (NOK)</option>
+                <option value="MXN">Mexican Peso (MXN)</option>
+                <option value="INR">Indian Rupee (INR)</option>
+                <option value="RUB">Russian Ruble (RUB)</option>
+                <option value="ZAR">South African Rand (ZAR)</option>
+                <option value="TRY">Turkish Lira (TRY)</option>
+                <option value="BRL">Brazilian Real (BRL)</option>
+
+
+                <!-- This is to add as much cryto currency as needed -->
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+        <div id="loading" style="display: none;">
+            <i></i> Converting...
+        </div>
+        <div class="result" id="conversionResult" style="display:none;"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
