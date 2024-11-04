@@ -5,10 +5,24 @@
     font-family: "poppins", sans-serif;
 }
 
-.main-container {
+body {
     margin: 0;
     padding: 0;
     background-color: antiquewhite;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%,
+            rgba(90, 92, 106, 1)0%, rgba(32, 45, 58, 1)81.3%);
+}
+
+.alt-container {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    color: #5a7be6;
 }
